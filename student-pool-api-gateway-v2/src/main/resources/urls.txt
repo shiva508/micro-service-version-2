@@ -1,0 +1,16 @@
+EUREKA-NAMING SERVER URL:http://localhost:8761/
+IMAGES-MS URL:http://localhost:8082/student-pool-images/images
+LOCATION MS URL:http://localhost:8100/student-pool-location/locationimages
+LOCATION MS URL:http://localhost:8100/student-pool-location/locationimagesFeign
+
+API GATE WAY:http://localhost:8400/STUDENT-POOL-LOCATION/locationimagesFeign
+API GATE WAY:http://localhost:8400/STUDENT-POOL-IMAGES/images
+
+API GATE WAY:http://localhost:8400/student-pool-location/locationimagesFeign
+API GATE WAY:http://localhost:8400/student-pool-images/images
+
+Api gateway changes:
+API GATE WAY:http://localhost:8400/student-pool-location-feign/locationimagesFeign
+API GATE WAY:http://localhost:8400/student-pool-location/locationimagesFeign
+API GATE WAY:http://localhost:8400/student-pool-images/images
+API GATE WAY:http://localhost:8400/student-pool-location-new/locationimagesFeign -->path rewritting
