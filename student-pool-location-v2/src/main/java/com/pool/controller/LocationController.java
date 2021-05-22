@@ -18,28 +18,30 @@ public class LocationController {
 
 	@Autowired
 	private Environment environment;
-	
+
 	@Autowired
 	private StudentPoolImagesProxy studentPoolImagesProxy;
-	
+
 	@Autowired
 	private RestTemplate restTemplate;
-	
+
 	@GetMapping("/locationimages")
-	public ResponseEntity<?> images(){
-		ResponseEntity<Map> map=restTemplate.getForEntity("http://localhost:8082/student-pool-images/images", Map.class);
-		Map<String, String> images=new LinkedHashMap<>();
+	public ResponseEntity<?> images() {
+		ResponseEntity<Map> map = restTemplate.getForEntity("http://localhost:8082/student-pool-images/images",
+				Map.class);
+		Map<String, String> images = new LinkedHashMap<>();
 		images.put("Location", "Thalla Malka puram");
 		images.putAll(map.getBody());
 		return new ResponseEntity<>(images, HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/locationimagesFeign")
-	public ResponseEntity<?> imagesFeign(){
-		ResponseEntity<Map> map=studentPoolImagesProxy.getUserIds();
-		Map<String, String> images=new LinkedHashMap<>();
+	public ResponseEntity<?> imagesFeign() {
+		ResponseEntity<Map> map = studentPoolImagesProxy.getUserIds();
+		Map<String, String> images = new LinkedHashMap<>();
 		images.put("Location", "Thalla Malka puram Feign");
 		images.putAll(map.getBody());
 		return new ResponseEntity<>(images, HttpStatus.OK);
 	}
+
 }
