@@ -11,7 +11,13 @@ CHANGE_PORT:-Dserver.port=8001
 EUREKA NAMING SERVER:http://localhost:8761/
 
 API GATEWAY URLS:
-GATE_WAY_URL:http://localhost:8400/student-pool-images/images
-GATE_WAY_URL:http://localhost:8400/student-pool-images/images
-STUDENT_POOL_PLAN_API:http://localhost:8765/student-pool-plan/student-pool-plan/plandetails
-STUDENT_POOL_TOUR_API_FEIGN:http://localhost:8765/student-pool-tours/student-pool-tours/tours-feign
+=================
+GATE_WAY_URL_STUDENT_POOL_IMAGES_API:http://localhost:8400/student-pool-images/images
+GATE_WAY_URL_STUDENT_POOL_LOCATION_API_FEIGN:http://localhost:8400/student-pool-location/locationimagesFeign
+
+API_GATE_WAY_WITH_NATIVE_PORT_NUMBER;
+=====================================
+GATE_WAY_URL_STUDENT_POOL_IMAGES_API:http://localhost:8400/STUDENT-POOL-IMAGES/student-pool-images/images
+GATE_WAY_URL_STUDENT_POOL_LOCATION_API_FEIGN:http://localhost:8400/STUDENT-POOL-LOCATION/student-pool-location/locationimagesFeign
+
+
