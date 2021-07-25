@@ -13,8 +13,7 @@ public class StudentPoolConfig {
 	@Value("student_name")
 	private String studentName;
 	public StudentPoolConfig() {
-		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 	public String getStudentRollNumber() {
 		return studentRollNumber;
