@@ -27,15 +27,15 @@ public class SwaggerConfiguration {
 		 return new Docket(DocumentationType.SWAGGER_2)
 	                .apiInfo(getApiInfo())
 	                .select()
-	                .apis(RequestHandlerSelectors.basePackage("com.security"))
+	                .apis(RequestHandlerSelectors.basePackage("com.pool.controller"))
 	                .paths(PathSelectors.any())
 	                .build();
 	}
 	
 	private ApiInfo getApiInfo() {
         return new ApiInfoBuilder()
-                	.title("Spring security All in one ")
-                	.description("This is used to test security")
+                	.title("USER PROFILE API ")
+                	.description("This API used to maintain user profile informatiom")
                 	.version("1.0.0")
                 	.build();
     }
