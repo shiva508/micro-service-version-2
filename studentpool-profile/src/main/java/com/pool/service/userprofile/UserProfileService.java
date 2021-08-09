@@ -15,4 +15,6 @@ public interface UserProfileService {
 	public CommonResponse deleteUserProfileByUserId(Integer userId);
 
 	public Userprofile updateUserprofile(Userprofile userprofile);
+
+	public Long findSuerProfileStatusCount(Boolean active);
 }

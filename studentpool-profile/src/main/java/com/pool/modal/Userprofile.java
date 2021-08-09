@@ -21,6 +21,7 @@ public class Userprofile implements Serializable {
 	private String lastName;
 	private String email;
 	private Date dateOfBirth;
+	private Boolean active;
 
 	public Userprofile() {
 
@@ -96,6 +97,14 @@ public class Userprofile implements Serializable {
 	public Userprofile setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 		return this;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
 	}
 
 }

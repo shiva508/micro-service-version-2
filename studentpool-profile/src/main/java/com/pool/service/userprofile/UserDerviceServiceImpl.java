@@ -57,4 +57,10 @@ public class UserDerviceServiceImpl implements UserProfileService {
 		return userprofileRepository.saveAndFlush(userprofile);
 	}
 
+	@Override
+	@Transactional
+	public Long findSuerProfileStatusCount(Boolean active) {
+		return userprofileRepository.findSuerProfileStatusCount(active);
+	}
+
 }
